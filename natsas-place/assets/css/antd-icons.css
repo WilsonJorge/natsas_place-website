@@ -1,0 +1,63 @@
+/* Estilo global para garantir que os ícones do Ant Design Vue são carregados */
+.anticon {
+  display: inline-block;
+  color: inherit;
+  font-style: normal;
+  line-height: 0;
+  text-align: center;
+  text-transform: none;
+  vertical-align: -0.125em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.anticon > * {
+  line-height: 1;
+}
+
+.ant-rate-star {
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  cursor: pointer;
+}
+
+.ant-rate-star-first,
+.ant-rate-star-second {
+  color: #f0f0f0;
+  transition: all 0.3s;
+  user-select: none;
+}
+
+.ant-rate-star-first {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.ant-rate-star-half .ant-rate-star-first,
+.ant-rate-star-half .ant-rate-star-second {
+  opacity: 1;
+}
+
+.ant-rate-star-half .ant-rate-star-first,
+.ant-rate-star-full .ant-rate-star-second {
+  color: #fadb14;
+}
+
+.ant-rate-star:hover {
+  transform: scale(1.1);
+}
+
+.ant-rate-disabled {
+  cursor: default;
+}
+
+.ant-rate-disabled .ant-rate-star:hover {
+  transform: scale(1);
+} 
