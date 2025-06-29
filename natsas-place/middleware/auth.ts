@@ -6,7 +6,7 @@ export default defineNuxtRouteMiddleware(async (to) => {
     return;
   }
 
-  const userStore = useUserStore();
+ const userStore = useUserStore();
   const { api } = useApiRequests();
 
   try {
